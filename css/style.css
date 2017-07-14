@@ -49,10 +49,18 @@ nav ul {
 }
 nav ul li a {
     font-family: Frijole, cursive;
-    color: rgb(0, 0, 0);
+    color: #FFF;
     text-decoration: none;
     font-size: 1.5em;
-    text-shadow: 0px 0px 30px rgba(154, 154, 154, 0.37);
+    text-shadow: 0px 0px 10px rgb(0, 0, 0);
+}
+nav ul li a:hover {
+    color: #000;
+    text-shadow: 0px 0px 10px white;
+}
+#currentnav {
+    color: #000;
+    text-shadow: 0px 0px 10px white;
 }
 
 /*################### VIDEO ##############################*/
@@ -89,4 +97,18 @@ nav ul li a {
 .datespics .col-2 img {
     width: 100%;
     border-radius: 2px;
+}
+
+/*############## MEDIA QUERIES ##########*/
+@media screen and (max-width: 700px) {
+    nav ul li a {
+        font-size: 1.2em;
+    }
+    
+    .datespics .col-2 {
+        display: none;
+    }
+    .dates .col-7, .datespics .col-7 {
+        width: 90%;
+    }
 }
